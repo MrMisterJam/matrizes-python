@@ -1,14 +1,15 @@
+# determinante.py
 # 16/08/2025
 
 """
-O determinante de uma matriz só pode ser calculado se a matriz for quadrada
+O determinante de uma matriz só pode ser calculado se a matriz for quadrada.
 Se uma matriz tiver uma linha ou coluna de zeros, seu determinante será zero. 
 O determinante pode ser usado para verificar se uma matriz é invertível (se o determinante é diferente de zero). 
 
-Sarrus é bem mais eficiente que sarrus2, porém sarrus2 foi um exercício para escalabilidade
+Sarrus é bem mais eficiente que sarrus2 nesse caso; porém, sarrus2 foi um exercício prático de escalabilidade.
 """
 
-from matriz import criar_matriz, _Matriz, printar_matriz
+from matriz import criar_matriz, instanciar_matriz
 
 
 
@@ -125,7 +126,7 @@ def laplace(matriz):
                     mri += 1
                 else:
                     mrj += 1       
-        obj = _Matriz(matriz_resultante, linhas - 1, colunas - 1)     
+        obj = instanciar_matriz(matriz_resultante, linhas - 1, colunas - 1)     
         det = achar_determinante(obj)    
         cofator = pow(-1, 1 + j) * det
         soma += num * cofator

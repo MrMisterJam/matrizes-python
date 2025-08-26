@@ -1,7 +1,10 @@
+# matriz_inversa.py
 # 16/08/2025
 # Possui trechos de código de gauss_jordan.py
-# Resolve a inversa de uma matriz
-# Estou tentando aprimorar a leitura do código e a reutilidade dele em outros, englobando o programa em funções; Primeira tentativa
+# O seguinte código possui duas funções principais, criar_matriz_inversa(), que prepara a estrutura de uma matriz inversa para ser resolvida pelo
+# método de Gauss-Jordan com a função resolver_matriz_inversa().
+# Estou tentando aprimorar a leitura do código e a reutilidade dele em outros, englobando o programa em funções - Primeira tentativa
+
 
 def criar_matriz_inversa(matriz):
     variaveis = ['x', 'y', 'z', 'a', 'b', 'c']
